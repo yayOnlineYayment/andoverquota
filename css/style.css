@@ -55,3 +55,11 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.donate-color {
+  background-color: #00b711;
+}
+
+.main-color {
+  color: #0a608f;
+}
