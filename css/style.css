@@ -11,12 +11,32 @@ nav .brand-logo {
   color: #444;
 }
 
-p {
-  line-height: 2rem;
+.b-c {
+    background-color: white;
 }
 
-.button-collapse {
-  color: #26a69a;
+nav ul li a {
+    color: #0A608F;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+/* #663399 */
+
+.btn-large {
+    background-color: #24AD05 !important; 
+}
+
+.mobile-button {
+    margin-left: 10px;
+}
+
+p {
+  line-height: 2rem;
 }
 
 .parallax-container {
@@ -45,9 +65,20 @@ p {
   }
 }
 
+@media only screen and (max-width : 600px) {
+    .nav-img {
+        height: 54px;
+    }
+}
+
 .icon-block {
   padding: 0 15px;
 }
+
+.material-icons {
+    color: #0a608f;
+}
+
 .icon-block .material-icons {
   font-size: inherit;
 }
