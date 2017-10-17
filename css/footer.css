@@ -1,0 +1,58 @@
+footer {
+    background-color: #0a608f !important;
+}
+
+#footer-donate {
+    width: 100%;
+    height: 50vh;
+    min-height: 300px;
+}
+
+#donate-text {
+    float: left;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#donate-text img {
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 15px;
+}
+
+#donate-text h4 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 2px;
+}
+
+#donate-text p {
+    color: #ccc;
+}
+
+#donate-text input {
+    background-color: #0a608f !important;
+    border: 3px solid white !important;
+    color: white !important;
+    border-width: 5px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#donate-text button {
+    background-color: white !important;
+    border: 3px solid white !important;
+    color: #0a608f !important;
+    border-width: 5px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
