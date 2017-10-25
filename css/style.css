@@ -1,32 +1,98 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+/* LAYOUT/FLEX */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
+main {
+    flex: 1 0 auto;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+/* COLORS */
+
+.quota-blue {
+    color: #14649A;
+}
+
+.quota-blue-background {
+    background-color: #14649A;
+}
+
+.quota-blue-h {
+    color: #14649A;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-family: 'Anton', sans-serif;
+}
+
+.quota-brown-h {
+    color: #e5e1db;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: .25vw;
+     text-shadow: 2px 2px 4px #000000;
+}
+
+.quota-green {
+    color: rgb(172, 168, 89) !important;
+}
+
+.quota-green-background {
+    background-color: rgb(172, 168, 89);
 }
 
 .b-c {
     background-color: white;
 }
 
+.title {
+    color: #fff;
+    background-color: rgb(172, 168, 89);
+    margin: 0;
+    padding: 0;
+}
+
+.title h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 8vw;
+    letter-spacing: 1vw;
+    font-family: 'Anton', sans-serif;
+}
+
+/* ANCHOR LINKS POSITIONING FIX */
+h1 {
+    position:relative; 
+}
+
+h1 span { 
+    position:absolute; 
+    top:-85px;
+}
+
+/* NAV */
+
 nav ul li a {
-    color: #0A608F;
+    color: #14649A;
     font-weight: bold;
     font-size: 20px;
 }
 
-nav li a:hover {
-    text-decoration: underline;
+.side-nav li a {
+    color: #14649A;
 }
 
-/* #663399 */
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
 
+/* BUTTONS */
 .btn-large {
     background-color: #24AD05 !important; 
 }
@@ -35,34 +101,34 @@ nav li a:hover {
     margin-left: 10px;
 }
 
-p {
-  line-height: 2rem;
+
+
+/* PARALLAX */
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
+.parallax-container .section {
     width: 100%;
-  }
+}
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
 }
 
 @media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+    #index-banner .section {
+        top: 0;
+    }
 }
 
 @media only screen and (max-width : 600px) {
@@ -71,18 +137,122 @@ p {
     }
 }
 
+/* MODALS */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    max-height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 0px;
+    will-change: top, opacity;
+}
+
+.modal .modal-footer {
+    border-radius: 0px;
+    background-color: #fff;
+    padding: 4px 6px;
+    height: 56px;
+    width: 100%;
+}
+
+.modal.modal-fixed-footer {
+    padding: 0;
+    height: 100%;
+}
+
+.modal-trigger {
+    cursor: pointer !important;
+}
+
+.card-content span .modal-trigger {
+    cursor: pointer !important;
+}
+
+.modal-content ul li {
+    list-style-type: square!important;
+}
+
+@media only screen and (max-width: 992px) {
+    .modal {
+        width: 100%;
+    }
+}
+
+/* QUOTES */
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid #14649A;
+}
+.quote-card {
+  background: #fff;
+  color: #222222;
+  padding: 20px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(34, 34, 34, 0.12);
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+}
+.quote-card p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 80%;
+}
+.quote-card cite {
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  font-weight: 200;
+  opacity: 0.8;
+}
+.quote-card:before {
+  font-family: Georgia, serif;
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 5em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
+}
+.quote-card:after {
+  font-family: Georgia, serif;
+  content: "”";
+  position: absolute;
+  bottom: -110px;
+  line-height: 100px;
+  right: -32px;
+  font-size: 25em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
+}
+@media (max-width: 640px) {
+  .quote-card:after {
+    font-size: 22em;
+    right: -25px;
+  }
+}
+
+/* ICONS */
+
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 
 .material-icons {
-    color: #0a608f;
+    color: #146698;
 }
 
 .icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
+    font-size: inherit;
 }

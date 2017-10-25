@@ -14,6 +14,7 @@
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Noto+Sans" rel="stylesheet">
         <!-- Materialize CSS, compiled and minified -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <!-- Custom CSS -->
@@ -24,167 +25,321 @@
     <body>
 
         <!-- TOP NAV -->
-        <div class="navbar-fixed"> 
-            <nav id="home">
+        <div id="home" class="navbar-fixed"> 
+            <nav>
                 <div class="nav-wrapper b-c">
 
-                    <a href="#home" class="brand-logo"><img src="img/quota-international%20logo%20transparent%20300x314.jpg" height="60px" class="nav-img" style="margin-left: 10px;"></a>
+                    <a href="#home" class="brand-logo"><img src="img/logo_andover_quota.png" class="nav-img" style="margin: .20rem 0 0 .50rem; height: 52px;"></a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-icon">menu</i></a>
 
                     <ul class="right hide-on-med-and-down">
-
-                        <li><a href="#mission">Mission</a></li>
-                        <li><a href="#action">In Action</a></li>
-                        <li><a href="#involved">Get Involved</a></li>
-                        <li><a href="#history">History</a></li>
+                        <li><a href="#what_we_do">What We Do</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#get_involved">Get Involved</a></li>
+                        <li><a href="#about">About</a></li>
                         <!-- child_care -->
-                        <a class="btn-large" href="#donate"><i class="material-icons left">sentiment_very_satisfied</i>Donate Now!</a>
-
+                        <!-- <a class="btn-large" href="#donate"><i class="material-icons left">sentiment_very_satisfied</i>Donate Now!</a>-->
                     </ul>    
-
                 </div>
             </nav>
         </div>
 
         <!-- SIDE NAV MOBILE COLLAPSE -->
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="#mission" style=" color: #0A608F; font-size: 20px;">Mission</a></li>
-            <li><a href="#action" style=" color: #0A608F; font-size: 20px;">In Action</a></li>
-            <li><a href="#involved" style=" color: #0A608F; font-size: 20px;">Get Involved</a></li>
-            <li><a href="#history" style=" color: #0A608F; font-size: 20px;">History</a></li>
-            <a class="btn-large mobile-button" href="#donate"><i class="material-icons left">sentiment_very_satisfied</i>Donate Now!</a>
+            <li><a href="#what_we_do">What We Do</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#get_involved">Get Involved</a></li>
+            <li><a href="#about">About</a></li>
+            <!--<a class="btn-large mobile-button" href="#donate"><i class="material-icons left">sentiment_very_satisfied</i>Donate Now!</a>-->
         </ul>
 
-        <div id="index-banner" class="parallax-container">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <br><br>
-                    <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-                    <div class="row center">
-                        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-                    </div>
-                    <div class="row center">
-                        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-                    </div>
-                    <br><br>
-
-                </div>
-            </div>
-            <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
-        </div>
-
-
-        <div class="container">
-            <div class="section">
-
-                <!--   Icon Section   -->
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                            <h5 class="center">Speeds up development</h5>
-
-                            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                            <h5 class="center">User Experience Focused</h5>
-
-                            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                            <h5 class="center">Easy to work with</h5>
-
-                            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-                        </div>
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- FEATURE IMAGE/PARALLAX/SLIDES -->
+            <div id="index-banner" class="parallax-container">
+                <div class="section no-pad-bot">
+                    <div class="container">
+                        <h2 class="center quota-brown-h">WE CHANGE LIVES</h2>
                     </div>
                 </div>
-
+                <div class="parallax"><img src="img/heart_hands_parallax_1.jpg" class="img-responsive" alt="Trust, heart from hands"></div>
             </div>
-        </div>
 
-
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center">
-                        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-                    </div>
-                </div>
+            <!-- WHAT WE DO -->
+            <div class="title valign-wrapper">
+                <h1 class="center valign"><span id="what_we_do"> </span>WHAT WE DO</h1> 
             </div>
-            <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-        </div>
-
-        <div class="container">
-            <div class="section">
-
-                <div class="row">
-                    <div class="col s12 center">
-                        <h3><i class="mdi-content-send brown-text"></i></h3>
-                        <h4>Contact Us</h4>
-                        <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center">
-                        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-        </div>
-
-        <footer class="page-footer teal">
             <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Company Bio</h5>
-                        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+                <div class="section">
+                    <h1 class="center quota-blue-h">We Empower:</h1>
 
+                    <!-- Empowering Women -->
+                    <div class="row">
+                        <div class="col s12 m6 l4">
+                            <div class="card icon-block">
+                                <br>
+                                <h1 class="center quota-blue"><i class="material-icons">face</i></h1>
+                                <h4 class="center quota-blue-h">Women</h4>                        
+                                <p>Empowered women establish strong families and communities.</p>
+                                <h4 class="right-align"><a class="modal-trigger" href="#empower_women"><i class="material-icons right-align light-green-text">arrow_drop_down_circle</i></a></h4>
+                            </div>
+                        </div>
+                        <!-- Helping Children -->
+                        <div class="col s12 m6 l4">
+                            <div class="card icon-block">
+                                <br>
+                                <h1 class="center quota-blue"><i class="material-icons">child_care</i></h1>
+                                <h4 class="center quota-blue-h">Children</h4>
+                                <p>By protecting our children, we protect the future of our world. </p>
+                                <h4 class="right-align valign"><a class="modal-trigger" href="#help_children"><i class="material-icons right-align light-green-text">arrow_drop_down_circle</i></a></h4>
+                            </div>
+                        </div>
 
+                        <div class="col s12 m6 l4">
+                            <div class="card icon-block">
+                                <br>
+                                <h1 class="center quota-blue"><i class="material-icons">hearing</i></h1>
+                                <h4 class="quota-blue-h">Deaf and Hard of Hearing</h4>
+                                <p>Provide the deaf and hard-of-hearing with equal opportunities to the realize their full potential.</p>
+                                <h4 class="right-align"><a class="modal-trigger" href="#help_deaf_hearing_impaired"><i class="material-icons right-align light-green-text">arrow_drop_down_circle</i></a></h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">Settings</h5>
-                        <ul>
-                            <li><a class="white-text" href="#!">Link 1</a></li>
-                            <li><a class="white-text" href="#!">Link 2</a></li>
-                            <li><a class="white-text" href="#!">Link 3</a></li>
-                            <li><a class="white-text" href="#!">Link 4</a></li>
-                        </ul>
+
+                </div>
+            </div>
+
+            <!-- PARALLAX IMAGE -->
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="img/helping_deaf_child_parallax.jpg" alt="Quota International of Andover helps the deaf and hard of hearing.">
+                </div>
+            </div>
+
+            <!-- NEWS SECTION -->
+            <div class="title valign-wrapper">
+                <h1 class="center valign"><span id="news"></span>NEWS</h1> 
+            </div>
+            <div class="container">
+                <div class="section">
+                    <div class="row">
+                        <!-- News Teaser -->
+                        <div class="col s12 m6 l6">
+                            <h3 class="quota-blue-h">Merrimack Valley Idol - Nov. 7th</h3>
+                            <p class="left-align light">Quota International of Andover will once again host Merrimack Valley Idol - a competition among the most talent vocalists in the Merrimack Valley.</p>
+                            <p class="left-align light">The event will be held at <a href="https://www.google.com/maps/place/Di+Burro's+Function+Facility/@42.753818,-71.1067867,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3015c20c644c1:0xd1fb24cd3d20e804!8m2!3d42.753818!4d-71.104598" target="_blank">DiBurro's Function Hall in Haverill, MA</a>.</p>
+                            <p class="left-align light">It is $95 per person. All contributions will benefit the people and communities we serve.</p>
+                            <p class="left-align light">To RSVP, <a href="mailto:lhadad@comcast.net" target="_blank">email Louise Hadad</a></p>
+                            <p class="left-align light">You can also <a href="https://www.facebook.com/events/1437106043075804/" target="_blank">get information about this event</a> on our new <a href="https://www.facebook.com/andoverquota/" target="_blank">Facebook Page</a>!</p>
+
+                        </div>
+                        <!-- News Image -->
+                        <div class="col s12 m6 l6">
+                            <div class="card">
+                                <div class="card-image">
+                                    <a href="https://www.facebook.com/events/1437106043075804/" target="_blank"><img src="img/MerrimackValleyIdol2017.png"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col l3 s12">
-                        <h5 class="white-text">Connect</h5>
-                        <ul>
-                            <li><a class="white-text" href="#!">Link 1</a></li>
-                            <li><a class="white-text" href="#!">Link 2</a></li>
-                            <li><a class="white-text" href="#!">Link 3</a></li>
-                            <li><a class="white-text" href="#!">Link 4</a></li>
-                        </ul>
+
+                </div>
+            </div>
+
+            <!-- PARALLAX IMAGE -->
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="img/young_child_parallax.jpg" alt="Quota International helps to ensure child development">
+                </div>
+            </div>
+
+            <!-- GET INVOLVED SECTION -->
+            <div class="title valign-wrapper">
+                <h1 class="center valign"><span id="get_involved"></span>GET INVOLVED</h1> 
+            </div>
+            <div class="container">
+                <div class="section">
+                    <div class="row">
+                        <!-- News Teaser -->
+                        <div class="col s12">
+                            <h3 class="quota-blue-h">Reach out, Volunteer!</h3>
+                            <p class="left-align light">Quota International does important, valued work in and around our community including our annual magnum opus - the Merrimack Valley Idol.</p>
+                            <p class="left-align light">We strive to elevate some of the most misfortunate people in the Merrimack Valley, Quota’s efforts focus on helping women, children, and the hearing-impaired.</p>
+                            <p class="left-align light">If you would like to help impoverished, disabled, and/or underprivileged members of our community, be sure to volunteer to help Quota spread its ideas of compassion, equality, and, above all else, sharing the wealth.</p>
+                            <p class="left-align light">To volunteer with Quota of Andover, <a href="mailto:lhadad@comcast.net" target="_blank">email Louise Hadad</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright">
+
+            <!-- PARALLAX IMAGE -->
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="img/andover_quota_parallax_1.jpg" alt="Quota International of Andover volunteers">
+                </div>
+            </div>
+
+            <!-- ABOUT SECTION -->
+            <div class="title valign-wrapper">
+                <h1 class="center valign"><span id="about"></span>ABOUT</h1> 
+            </div>
+            <div class="container">
+                <div class="section">
+                    <div class="row">
+                        <div class="col s12">
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">
+                                        <i class="material-icons quota-green">arrow_drop_down_circle</i>
+                                        <h4 class="quota-blue-h">MISSION</h4>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <span>
+                                            <p class="light"><a href="https://www.quotainternational.org/" target="_blank">Quota International, Inc.</a> is a non-profit organization empowering women, children, the deaf, hard of hearing, and speech impaired in local communities around the world. </p>
+                                            <p class="light">In 1919, five business women inspired to serve, founded Quota International as the first international women’s service organization, one year before women in the United States won the right to vote.</p>
+                                            <p class="light">Today, more than 5,000 Quota members, women, men, and youth, come together to help women and children overcome poverty, educational, and workforce challenges in 14 countries.</p>
+                                            <p class="light">Though the projects and partnerships may have changed over the past 100 years, one thing remains the same, Quotarians continue to make a difference.</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                        <i class="material-icons quota-green">arrow_drop_down_circle</i>
+                                        <h4 class="quota-blue-h">HISTORY</h4>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <span>
+
+                                            <p class="light"><img src="img/andover_quota_wanda_joiner.jpg" style="width: 50%; padding: 0 1rem .5rem 0;" class="left responsive-img materialboxed" data-caption="Founder Wanda Frey Joiner, left, is presented with an official flag from Helen Agnew, at the 1963 International Convention..." alt="Founder Wanda Frey Joiner, left, is presented with an official flag from Helen Agnew, at the 1963 International Convention in Los Angeles, California.">The idea for Quota International was sparked when Wanda Frey Joiner attended a Christmas "ladies night" party hosted by the Kiwanis Club of Buffalo, New York.  Wanting to form a similar organization for women to join, a few weeks later, Joiner and four businesswomen, Florence M. Smith, Alice C. Sauers, Ora G. Cole,and Jean Ware Redpath, signed incorporation documents forming Quota Club International on February 6, 1919, one year before the United States passed the 19th Amendment granting women the right to vote and less than one month after the end of World War I. Because many women had joined the workforce and organized campaigns to support the troops, when the war was over, women wanted more employment and empowerment opportunities.  Their enthusiasm propelled the organization to become the first international women-only service organization in 1925.</p>
+
+                                            <p class="light">The five founders chose to keep their dream simple by using the “golden rule” as their code and the “sharing” of both talent and responsibility as its ideal. During the early years of Quota, the organization's focus targeted and promoted: good citizenship, crime prevention, extending friendly relations, gaining recognition for the achievements of women, and international relations. At its first annual convention held in Scranton, Pennsylvania, Quotarians were faced with several changes—the original board of directors recommended that an entirely new board be selected, and it was evident that a central headquarters office should be set up to manage all activities of Quota.</p>
+                                            <p class="light">That next issue of the Quotarian provided a snapshot of the women who were Quota presidents at that time. Occupations ranged from owner of “the largest retail shoe store in Scranton” to a concert harpist, an osteopath, a city official, and a general secretary of a local YMCA—in all a reflection of the diversity of Quota’s early members.</p>
+                                            <p class="light">By the fourth annual convention held in Allentown, Pennsylvania, membership had risen to over one thousand women, and clubs had been established in Maryland, Delaware, Virginia, and Ohio. Service work directed at girls was adopted as a major initiative. All clubs were urged to identify underprivileged girls and support them to remain in school longer or assist them in attending college or attaining special training. Clubs expanded upon this idea and the program flourished. Five years into its existence, Quota Club International doubled its members by its tenth anniversary with clubs as far south as Georgia, through the Midwest, and into the Northeast United States.</p>
+
+                                            <p class="light">The realization of the international dream came in 1925 with the formation of a club in Winnipeg, Manitoba, Canada, and in 1926 in the province of Saskatchewan. In 1927, Quota received the attention of U.S. President Calvin Coolidge, who sent his greetings to that year’s convention attendees. Headquarters was on the move to the nation’s capital—Washington, D.C.—and a permanent home. Each year, headquarters had moved with the current president and now with a pledge of support from each club ($1,700 total), Quota would have a permanent home from which to do business.</p>
+
+                                            <p class="light">By the 1929 annual convention in Worcester, Massachusetts, membership had grown to 2,500. At Quota International's 20th Convention in 1939, the organization promoted the World Center for Women's Archives in New York, which had formed in 1935. This World Center was also supported by many famous women's rights activist, including: Inez Haynes Irwin,Florence Ellinwood Allen, Dorothy Thompson, Ida Tarbell, Mary R. Beard, and Rosika Schwimmer. With the outbreak of World War II, Quotarians worked together to raise funds to purchase two ambulances for the Red Cross and worked on a variety of other war and defense projects, including: joining the civil defense, helping at nurseries, canteen work, selling war bonds, performing blood typing, sewing and knitting, and attending first aid courses. Upon the conclusion of the war, the organization modified its objectives. At the 1946 convention it was decided that Quota International would emphasize service for the needs of the deaf and hard-of-hearing, while continuing to support and empower women and children.</p>
+
+                                            <p class="light">Wanda Frey Joiner, the founder of Quota International, was born in Odessa, Russia in 1882. At the age of nine, following her father's death, she immigrated to the United States with her mother and brother. When she was 24, Wanda Frey married Robert Parks only to be widowed three years later. She went on to complete an extensive business course at Canton's National Business College in Buffalo, New York, and joined the paint and glass industry as a filing clerk. Her professional successes included leading two companies to multi-million dollar status through her work as comptroller, president and general manager, and board member. She started her own business in the paint industry that she ended up selling in 1948. Joiner continued to build upon her business ventures while also devoting time to Quota International until her death in 1968.  
+                                            </p>
+
+
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="page-footer quota-blue-background">
                 <div class="container">
-                    Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5 class="white-text">About Quota International</h5>
+                            <p class="grey-text text-lighten-4"><a href="https://www.quotainternational.org/" target="_blank">Quota International, Inc.</a> is an international service organization that provides basic needs to women, children, the deaf, and hard of hearing in communities around the world.</p>
+
+
+                        </div>
+                        <!--<div class="col l3 s12">
+<h5 class="white-text">Links</h5>
+<ul>
+<li><a class="white-text" href="#!">Link 1</a></li>
+<li><a class="white-text" href="#!">Link 2</a></li>
+<li><a class="white-text" href="#!">Link 3</a></li>
+<li><a class="white-text" href="#!">Link 4</a></li>
+</ul>
+</div>-->
+                        <div class="col l3 s12">
+                            <h5 class="white-text">Connect with Quota</h5>
+                            <ul>
+                                <li><a class="white-text" href="https://www.facebook.com/andoverquota" target="_blank"><img src="img/logo_facebook.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        Made by Andover High School Web D+D students
+                    </div>
+                </div>
+            </footer>
+
+            <!-- MODALS -->
+
+            <!-- EMPOWER WOMAN -->
+            <div id="empower_women" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h3>Advocate to Empower Women</h3>
+                    <p class="flow-text">What exactly does it mean to be empowered?</p>
+                    <p class="flow-text">Our programs are designed to support our belief that when women are empowered, families are more financially secure, children are healthier, and communities are stronger. We believe that in empowering, we are asserting that women have the same rights as men and should be able to pursue their personal, familial, and career goals with equal liberty and opportunity.</p>
+                    <h5>How do we know what needs exist in these women’s lives?  We ask them...</h5>
+                    <p class="flow-text">After connecting with women in our local communities, they advocated for the following resources and platforms:</p>
+                    <ul>
+                        <li class="flow-text">Homeless and abuse shelters create safe spaces that allow women to gather and seek support.</li>
+                        <li class="flow-text">Cancer research and education prepares for the health of women and their daughters.</li>
+                        <li class="flow-text">Food pantries and Christmas hampers ensures women’s most basic needs are met.</li>
+                        <li class="flow-text">Jobs skills and vocational training equips women with the tools necessary for pursuing their career goals.</li>
+                        <li class="flow-text"><a href="https://www.internationalwomensday.com/" target="_blank">International Women’s Day</a> provides a platform whereby women can make their voices heard and celebrate their successes.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="#home" class="modal-action modal-close waves-effect btn-flat white-text right"><i class="material-icons" style="font-size:2.5rem;">close</i></a>
                 </div>
             </div>
-        </footer>
+
+            <!-- HELP CHILDREN -->
+            <div id="help_children" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h3>Ensure Child Development</h3>
+                    <p class="flow-text">Quota International stands in agreement with the Convention on the Rights of the Child.</p>
+                    <p class="flow-text">As human beings with a distinct set of rights, we believe all children should have access to health care, education, daily nutritious meals, and a sense of security.  Children are especially vulnerable to threats in society.  It is our job to ensure these threats do not affect their well-being and development</p>
+                    <p class="flow-text">By protecting our children, we protect the future of our world.</p>
+                    <p class="flow-text">According to UNICEF,</p>
+                    <blockquote class="quote-card blue-card"><p>Social research findings show that children's earliest experiences significantly influence their future development. The course of their development determines their contribution, or cost, to society over the course of their lives.</p></blockquote>
+                    <p class="flow-text">The following programs ensure that children’s most basic needs are met:</p>
+                    <ul>
+                        <li class="flow-text">Nutritious Meals.</li>
+                        <li class="flow-text">Hospital Diagnostic Equipment.</li>
+                        <li class="flow-text">Cops 'n Kids/QuoCKa Literacy Program.</li>
+                        <li class="flow-text">Teddy Bear Distributions For Children In Trauma.</li>
+                        <li class="flow-text">Health Care, Screenings, and Check Ups.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="#home" class="modal-action modal-close waves-effect btn-flat white-text right"><i class="material-icons" style="font-size:2.5rem;">close</i></a>
+                </div>
+            </div>
+
+            <!-- HELP THE DEAF AND HEARING IMPAIRED -->
+            <div id="help_deaf_hearing_impaired" class="modal modal-fixed-footer"> 
+                <div class="modal-content">
+                    <h3>Fund Resources for the Deaf and Hard of Hearing</h3>
+                    <p class="flow-text">Quota International believes in creating an inclusive society for all.</p>
+                    <p class="flow-text">This means creating access to basic goods and services for persons with varying abilities and remaining sensitive to the changing needs of our local communities.</p>
+                    <p class="flow-text">Though confident in their abilities, the deaf and hard-of-hearing are often marginalized in society through a lack of equal opportunity. Quota International seeks to close the gap by providing the deaf and hard-of-hearing equal opportunities to the realize their full potential.</p>
+                    <p class="flow-text">Quota International creates opportunity for the deaf and hard-of-hearing through the following programs:</p>
+                    <blockquote class="quote-card blue-card"><p>Social research findings show that children's earliest experiences significantly influence their future development. The course of their development determines their contribution, or cost, to society over the course of their lives.</p></blockquote>
+                    <p class="flow-text">The following programs ensure that children’s most basic needs are met:</p>
+                    <ul>
+                        <li class="flow-text">Sign Language Classes & Awareness.</li>
+                        <li class="flow-text">Scholarships.</li>
+                        <li class="flow-text">Signing Santa Events.</li>
+                        <li class="flow-text">Hearing Aid & Ear Plug Campaigns.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="#home" class="modal-action modal-close waves-effect btn-flat white-text right"><i class="material-icons" style="font-size:2.5rem;">close</i></a>
+                </div>
+            </div>
+
+        </main>
+
 
         <!--  Scripts-->
+        <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

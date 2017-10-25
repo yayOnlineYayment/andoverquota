@@ -1,9 +1,9 @@
-(function($){
-  $(function(){
-
+$(document).ready(function () {
+    $('.materialboxed').materialbox();
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+   $('.collapsible').collapsible();
+    $('.materialboxed').materialbox();
+});
